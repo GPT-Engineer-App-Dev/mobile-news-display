@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Flex, Heading, Text, Link, Input, useColorMode, IconButton } from '@chakra-ui/react';
-import { SunIcon, MoonIcon } from 'react-icons/fa';
+import { FaSun, FaMoon } from 'react-icons/fa';
 import axios from 'axios';
 
 const Index = () => {
@@ -39,7 +39,7 @@ const Index = () => {
       <Flex justify="space-between" align="center" mb={4}>
         <Heading as="h1" size="lg">Hacker News Top Stories</Heading>
         <IconButton
-          icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+          icon={colorMode === 'light' ? <FaMoon /> : <FaSun />}
           onClick={toggleColorMode}
           aria-label="Toggle dark mode"
         />
