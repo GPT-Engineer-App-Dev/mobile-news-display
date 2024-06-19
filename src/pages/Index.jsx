@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Text, Link, Flex, Input, useColorMode, Button } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from 'react-icons/fa';
+import { FaMoon as MoonIcon, FaSun as SunIcon } from 'react-icons/fa';
 
 const Index = () => {
   const [stories, setStories] = useState([]);
